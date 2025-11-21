@@ -24,7 +24,7 @@ public static class Q1_Valid_Anagram
     /// <returns>true if the strings are anagrams of each other; otherwise, false.</returns>
     public static bool IsAnagram(string s, string t)
     {
-        if (s.Length != t.Length)
+        if (s == null || t == null || s.Length != t.Length)
         {
             return false;
         }
